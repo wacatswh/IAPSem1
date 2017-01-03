@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <head>
-	<title>Order Form</title>
+	<title>NextApp Order Page</title>
 	<link rel="icon" href="../images/ico.ico"/>
 	<link rel="stylesheet" type="text/css" href="../css.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<script type="text/javascript" src="../js.js"></script>
 </head>
 
 <body>
-	<a href="../index.html"><img src="../images/logo.png" alt="NextApp Logo" 
-			style="width:186px; height: 112px;"/></a>
-	
 	<nav>
 		<ul>
 			<li><a href="../index.html">Home</a></li>
-			<li><a href="xml.html">XML Page</a></li>
-			<li class="active"><a href="order.html">Order Form</a></li>
-			<li><a href="slide.html">Slide Show</a></li>
+			<li><a href="xml.html">XML</a></li>
+			<li class="active"><a href="order.html">Order</a></li>
+			<li><a href="slide.html">Gallery</a></li>
 			<li><a href="download.html">Download</a></li>			
 			<li><a href="report.html">Report</a></li>
 		</ul>
 	</nav>
 	
 	<section>
-		<h1>Subscribe for our newsletter</h1>
-		
+	
+		<br><br><br>
+		<h1 style="text-align: center;">
+			Pre-order the app from us. <a href="download.html">Install</a> when our app is officially released.
+		</h1>
+	
+		<div style="width: 700px; margin: -300px auto;">
 		<form>
-			First Name: <input type="text" name="firstname" default="John"><br><br>
-			Last Name: <input type="text" name="lastname" default="Smith"><br><br>
-			Email: <input type="email" name="email" default="email@email.com"><br><br><br>
+			<p style="font-size: 1.5em;">First Name:</p> 
+			<input id = "firstName" type="text" name="firstname" style="height: 30px; width: 300px; font-size: 1.25em; color: #82868c" autofocus><br><br>
 			
-			<input type="submit" value="Submit">
+			<p style="font-size: 1.5em;">Last Name:</p> 
+			<input id = "lastName" type="text" name="lastname" style="height: 30px; width: 300px; font-size: 1.25em; color: #82868c"><br><br>
+			
+			<p style="font-size: 1.5em;">Email:</p> 
+			<input id = "email" type="email" name="email" style="height: 30px; width: 300px; font-size: 1.25em; color: #82868c"><br><br>
+			
+			<label>
+				<input type="checkbox" id = "cbGranBlue" value="granblue" checked>Get Granblue Fantasy
+			</label><br>
+			<label>
+				<input type="checkbox" id = "cbKanColle" value="kancolle" checked>Get Kantai Collection
+			</label><br>
+			<label>
+				<input type="checkbox" id = "cbClashRoyale" value="clashroyale" checked>Get Clash Royale
+			</label><br><br><br>
+			
+			
+			<input type="submit" value="Submit!" onclick="confirmSubmit()"
+			style="width: 150px; height: 40px; position: relative; left: 75px; font-size: 1.3em;">
 		</form>
+		</div>
 	</section>
 	
-	<div id="ads">
-		<p>Advertisement</p>
-	</div>
-	
 	<footer>
-		<a href="https://www.facebook.com"><img src="../images/fb.png" 
+		<a href="https://www.facebook.com/NextApp"><img src="../images/fb.png" 
 			alt="Like our Facebook page" style="width:64px; height:64px;"/></a>
-		<a href="https://www.twitter.com"><img src="../images/twitter.png"
+		<a href="https://www.twitter.com/NextApp"><img src="../images/twitter.png"
 			alt="Follow us on Twitter" style="width:64px; height:64px;"/></a>
+		<a href="https://plus.google.com/u/NextApp"><img src="../images/googleplus.png"
+			alt="Follow us on Google Plus" style="width: 64px; height: 64px;"/></a>
+		<a href="../index.html"><img src="../images/logo.png"
+			alt="NextApp logo" style="width: 144px; height: 84px; display: block; margin: 0 auto;
+			position: relative; bottom: 80px;"/></a>
 	</footer>
 </body>
 
