@@ -4,7 +4,7 @@
 	<link rel="icon" href="../images/ico.ico"/>
 	<link rel="stylesheet" type="text/css" href="../css.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-	<xsl:stylesheet version="1.0" xmlns:xsl="xml.xml">
+	<script type="text/javascript" src="xmlJS.js"></script>
 </head>
 
 <body>
@@ -20,26 +20,9 @@
 	</nav>
 	
 	<section>
-		<table border="1">
-			<tr>
-				<th style="text-align:left">Name</th>
-				<th style="text-align:left">Genre</th>
-				<th style="text-align:left">Status</th>
-				<th style="text-align:left">Price</th>
-				<th style="text-align:left">File Size</th>
-				<th style="text-align:left">Release Date</th>
-			</tr>
-			<xsl:for-each select="appCatalog/app">
-			<tr>
-				<td><xsl:value-of select="name"></td>
-				<td><xsl:value-of select="genre"></td>
-				<td><xsl:value-of select="status"></td>
-				<td><xsl:value-of select="price"></td>
-				<td><xsl:value-of select="fileSize"></td>
-				<td><xsl:value-of select="releaseDate"></td>		
-			</tr>
-			</xsl:for-each>
-		</table>
+		<div id="data">
+		
+		</div>
 	</section>
 	
 	<footer>

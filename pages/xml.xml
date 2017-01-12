@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appCatalog>
+	<app>
+		<name>Granblue Fantasy</name>
+		<genre>Role-Playing Game</genre>
+		<status>Beta</status>
+		<releaseDate>1/4/2017</releaseDate>
+	</app>
+	<app>
+		<name>Kantai Collection</name>
+		<genre>War Simulation</genre>
+		<status>Beta</status>
+		<releaseDate>1/4/2017</releaseDate>
+	</app>
+	<app>
+		<name>Clash Royale</name>
+		<genre>Strategy Game</genre>
+		<status>Beta</status>
+		<releaseDate>1/4/2017</releaseDate>
+	</app>
+</appCatalog>
