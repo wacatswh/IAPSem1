@@ -47,8 +47,27 @@ nav a:hover {
 section {
 	background-image: url("images/bg.png");
 	width: 100%;
-	height: 100%;
+	height: 1080px;
 	padding-top: 60px;
+}
+
+section table, th, td {
+	border: 2px solid black;
+	padding: 10px;
+}
+
+section table th {
+	font-family: 'Arvo', serif;
+	color: #333;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+section table td {
+	font-family: 'Arvo', serif;
+	color: #333;
+	font-size: 1.2em;
+	text-align: center;
 }
 
 section h1 {
@@ -113,8 +132,7 @@ footer a {
 	margin: 5px;
 }
 
-
-
+/* below are CSS for the slide show in Gallery page */
 
 .bss-slides{
   position: relative;
