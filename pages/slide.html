@@ -4,11 +4,11 @@
 	<link rel="icon" href="../images/ico.ico"/>
 	<link rel="stylesheet" type="text/css" href="../css.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-	<script type="text/javascript" src="../js.js"></script>
+	<script type="text/javascript" src="better-simple-slideshow.js"></script>
 </head>
 
 <body>
-	<nav>
+	<nav style="z-index: 10;">
 		<ul>
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="xml.html">XML</a></li>
@@ -19,11 +19,26 @@
 		</ul>
 	</nav>
 	
-	<section>
-		
+	<section style="height: 900px; z-index: 0;">
+			<div class="bss-slides">
+				<figure>
+					<img src="../images/granblue.jpg" style="height: 720px; width: 1825px;"/>
+					<figcaption></figcaption> 
+				</figure>
+				<figure>
+					<img src="../images/kancolle.png" style="height: 720px; width: 1825px;"/>
+					<figcaption></figcaption> 
+				</figure>
+				<figure>
+					<img src="../images/clashroyale.jpg" style="height: 720px; width: 1825px;"/>
+					<figcaption></figcaption> 
+				</figure>
+				
+				<script>makeBSS('.bss-slides');</script>
+			</div> 
 	</section>
 	
-	<footer>
+	<footer style="z-index: 10;">
 		<a href="https://www.facebook.com/NextApp"><img src="../images/fb.png" 
 			alt="Like our Facebook page" style="width:64px; height:64px;"/></a>
 		<a href="https://www.twitter.com/NextApp"><img src="../images/twitter.png"
